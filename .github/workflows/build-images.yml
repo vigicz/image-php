@@ -28,4 +28,4 @@ jobs:
         with:
           context: ./7.3-fpm
           push: true
-          tags: vigicz/php:7.3-fpm
+          tags: ghcr.io/vigicz/php:7.3-fpm
