@@ -38,3 +38,11 @@ jobs:
           context: ./8.1-fpm
           push: true
           tags: ghcr.io/vigicz/php:8.1-fpm
+
+      - name: Build PHP 8.1-fpm-supervisord
+        id: push_8-1-fpm-supervisord
+        uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
+        with:
+          context: ./8.1-fpm-supervisord
+          push: true
+          tags: ghcr.io/vigicz/php:8.1-fpm-supervisord
