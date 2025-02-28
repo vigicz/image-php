@@ -54,3 +54,11 @@ jobs:
           context: ./beanstalkd
           push: true
           tags: ghcr.io/vigicz/beanstalkd:0.1
+
+      - name: Build caddy
+        id: push_caddy
+        uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
+        with:
+          context: ./beanstalkd
+          push: true
+          tags: ghcr.io/vigicz/caddy:2.9.1
