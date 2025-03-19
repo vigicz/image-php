@@ -21,6 +21,8 @@ RUN apt-get update \
         libzip-dev \
         zip \
         supervisor \
+        telnet \
+        netcat-openbsd \
 	# cleanup
 	&& apt-get clean -y && apt-get autoclean -y && apt-get autoremove -y \
 	&& rm -rf /var/lib/apt/lists/* /var/lib/log/* /tmp/* /var/tmp/*
